@@ -1,0 +1,41 @@
+/* Add to globals.css or create a new CSS file and import it */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.vertical-swipe-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.vertical-swipe-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.vertical-swipe-section.active .vertical-swipe-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .vertical-swipe-section {
+    min-height: auto;
+    padding: 4rem 0;
+  }
+}
+
+/* Smooth scrolling for all browsers */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
