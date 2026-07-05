@@ -1,9 +1,9 @@
-import { Bath, CookingPot, Toilet, Flame, Paintbrush, Sparkles, Accessibility, Home } from "lucide-react"
+import { Bath, CookingPot, Droplets, Flame, Paintbrush, Sparkles, Accessibility, Home } from "lucide-react"
 
 const services = [
   { icon: Bath, title: "ユニットバス交換", desc: "冬でも暖かい高断熱浴室へ。掃除がラクな最新モデルもご提案。" },
   { icon: CookingPot, title: "キッチン交換", desc: "家事動線を見直し、収納力と使いやすさを両立したキッチンに。" },
-  { icon: Toilet, title: "トイレ交換", desc: "節水・自動洗浄で快適＆清潔。最短1日でのスピード施工も可能。" },
+  { icon: Droplets, title: "トイレ交換", desc: "節水・自動洗浄で快適＆清潔。最短1日でのスピード施工も可能。" },
   { icon: Flame, title: "給湯器・コンロ交換", desc: "故障前の交換で安心。省エネ機種で光熱費もおトクに。" },
   { icon: Paintbrush, title: "クロス貼替", desc: "お部屋の印象を一新。抗菌・消臭・調湿など機能性壁紙も豊富。" },
   { icon: Sparkles, title: "ハウスクリーニング", desc: "水回りから換気扇まで、プロの技術でまるごとリフレッシュ。" },
