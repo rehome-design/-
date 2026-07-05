@@ -85,7 +85,8 @@ const config = {
         "fade-in-delayed": "fade-in-delayed 2s ease-out",
       },
       fontFamily: {
-        handwriting: ["var(--font-handwriting)", "cursive"],
+        sans: ["var(--font-sans)", "Hiragino Sans", "ui-sans-serif", "system-ui", "sans-serif"],
+        rounded: ["var(--font-rounded)", "var(--font-sans)", "Hiragino Sans", "sans-serif"],
       },
     },
   },
