@@ -24,24 +24,24 @@ export function HeroSection() {
           </div>
 
           <h1 className="font-rounded text-3xl font-extrabold leading-tight tracking-tight text-foreground text-balance sm:text-4xl lg:text-5xl">
-            大田区のリフォームは
-            <br />
-            <span className="text-primary">自社施工</span>だから、
-            <br />
+            大田区で
             <span className="relative inline-block">
-              中間マージン
-              <span className="text-accent">0円</span>
+              信頼される
               <span className="absolute -bottom-1 left-0 h-2 w-full rounded-full bg-accent/25" />
             </span>
-            。
+            、
+            <br />
+            <span className="text-primary">責任施工</span>のリフォーム。
+            <br />
+            最初から最後まで、自社の職人が。
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-            下請けに丸投げしない<span className="font-bold text-foreground">完全自社施工</span>だから、
-            高品質なのに適正価格。創業17年・累計
+            設計から施工まで<span className="font-bold text-foreground">自社の職人が一貫して担当</span>。
+            だから品質にも工程にも責任を持てます。創業17年・累計
             <span className="font-bold text-foreground">{company.projects}件超</span>
-            の実績で、大田区・品川区・港区・目黒区の理想の住まいを叶えます。
-            <span className="font-bold text-foreground">3Dシミュレーション</span>で完成イメージも事前に確認できて安心です。
+            の実績で、大田区・品川区・港区・目黒区の暮らしに寄り添ってきました。
+            <span className="font-bold text-foreground">3Dシミュレーション</span>で完成イメージを事前に確認できるから、初めての方も安心です。
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -96,8 +96,8 @@ export function HeroSection() {
             />
           </div>
           <div className="absolute -bottom-5 -left-3 rounded-2xl bg-card px-5 py-4 shadow-lg md:-left-6">
-            <p className="font-rounded text-2xl font-extrabold text-primary md:text-3xl">中間マージン0円</p>
-            <p className="text-xs text-muted-foreground">自社施工だから実現できる適正価格</p>
+            <p className="font-rounded text-2xl font-extrabold text-primary md:text-3xl">一貫責任施工</p>
+            <p className="text-xs text-muted-foreground">設計から施工まで自社の職人が担当</p>
           </div>
         </div>
       </div>

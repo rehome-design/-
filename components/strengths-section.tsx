@@ -3,8 +3,8 @@ import { Handshake, Cuboid, Leaf, HeartHandshake, Users, ShieldCheck } from "luc
 const strengths = [
   {
     icon: Handshake,
-    title: "完全自社施工・中間マージン0円",
-    desc: "下請けに丸投げせず、自社の職人が最初から最後まで責任を持って施工。余計な中間マージンが発生しないから、同じ品質でも大田区で選ばれる適正価格を実現します。",
+    title: "設計から施工まで一貫責任",
+    desc: "下請けに丸投げせず、自社の職人が最初から最後まで責任を持って施工。窓口が一つだから話が早く、品質も工程も明確。大田区で長く信頼をいただいている理由です。",
     highlight: true,
   },
   {
@@ -44,8 +44,8 @@ export function StrengthsSection() {
             大田区で選ばれる<span className="text-primary">6つの理由</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            「他社と何が違うの？」——一番の違いは、<span className="font-bold text-foreground">自社施工で中間マージンがかからない</span>こと。
-            だから高品質でも価格に納得いただけます。
+            「他社と何が違うの？」——一番の違いは、<span className="font-bold text-foreground">設計から施工まで自社の職人が責任を持つ</span>こと。
+            だから仕上がりにも、工事のあとにも安心していただけます。
           </p>
         </div>
 
