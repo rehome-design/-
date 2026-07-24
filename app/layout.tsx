@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import "./globals.css"
 import { Noto_Sans_JP, M_PLUS_Rounded_1c } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
+import { StructuredData } from "@/components/structured-data"
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
@@ -95,53 +96,7 @@ export default function RootLayout({
       className={`${notoSansJP.variable} ${mPlusRounded.variable} bg-background`}
     >
       <body className="font-sans antialiased">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "GeneralContractor",
-              "@id": "https://rehome-design.com",
-              name: "Re:Home Design（株式会社HOTTA）",
-              image: "https://rehome-design.com/images/hero-living-room.png",
-              description:
-                "大田区のリフォーム会社。自社施工で中間マージン0円。創業17年・累計10,000件超の実績。品川区・港区・目黒区・川崎市も対応。",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "東糀谷3-5-6 1階",
-                addressLocality: "大田区",
-                addressRegion: "東京都",
-                addressCountry: "JP",
-              },
-              url: "https://rehome-design.com",
-              telephone: "03-6339-1816",
-              email: "info@hotta-haru.com",
-              priceRange: "¥¥",
-              openingHoursSpecification: {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-                opens: "09:00",
-                closes: "18:00",
-              },
-              areaServed: ["大田区", "品川区", "港区", "目黒区", "川崎市"],
-              knowsAbout: [
-                "住宅リフォーム",
-                "キッチンリフォーム",
-                "ユニットバス交換",
-                "トイレ交換",
-                "内装工事",
-                "エコリフォーム",
-                "バリアフリーリフォーム",
-              ],
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "1280",
-                bestRating: "5",
-              },
-            }),
-          }}
-        />
+        <StructuredData />
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
